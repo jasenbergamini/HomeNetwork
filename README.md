@@ -2,6 +2,8 @@
 
 A fully designed and deployed home network using the UniFi ecosystem. This project focuses on network segmentation, device security, and privacy enhancements. The main goal was to create a robust, secure, and manageable home network environment.
 
+![DAsh2](https://github.com/user-attachments/assets/f5e98156-abc4-48f4-9ba0-ff6eba53706a)
+
 ## 📦 Technologies
 
 - `Ubiquiti UniFi Controller`
@@ -106,6 +108,6 @@ To manage or replicate the network setup:
 
 5. Monitor device health and alerts in the Dashboard.
 
-![Censor](https://github.com/user-attachments/assets/2c992400-40dc-4b60-927f-78e6c9d24a50)
+
 
 
