@@ -103,3 +103,5 @@ To manage or replicate the network setup:
 4. Enable VPN and DNS-level ad blocking under Settings → Internet / Security.
 
 5. Monitor device health and alerts in the Dashboard.
+
+(https://github.com/jasenbergamini/HomeNetwork/blob/main/Censor.jpg)
