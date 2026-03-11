@@ -56,6 +56,8 @@ Along the way, I documented each step, from VLAN configurations to device settin
 
 By the end, I had a fully functional, secure home network and a much better understanding of network design, device integration, and system management. Planning, implementing, testing, and documenting each step helped me see how everything works together.
 
+<img width="3838" height="1459" alt="image" src="https://github.com/user-attachments/assets/4aa0378b-f1f5-4a0b-b330-ca0d8525a618" />
+
 ## 📚 What I Learned
 
 ### 🧠 VLANs and Segmentation
