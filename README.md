@@ -1,114 +1,105 @@
-# 🥷🏽 NinjaSketch
+# 🏠 UniFi Home Network
 
-An Excalidraw clone with React and TypeScript. Rough.js is used for the sketchy, hand-drawn style. I built the side project for learning purposes. The app is not responsive. I mainly focused on the functionalities since I already have plenty of projects that are responsive.
+A fully designed and deployed home network using the UniFi ecosystem. This project focuses on network segmentation, device security, and privacy enhancements. The main goal was to create a robust, secure, and manageable home network environment.
 
 ## 📦 Technologies
 
-- `Vite`
-- `React.js`
-- `TypeScript`
-- `Rough.js`
-- `CSS`
-- `Vitest`
-- `Cypress` 
-- `Testing Library`
+- `Ubiquiti UniFi Controller`
+  
+- `UniFi Access Points`
+  
+- `UniFi Security Cameras`
+  
+- `UniFi Door Access Controllers`
+  
+- `VLANs and network segmentation`
+  
+- `VPN (with DNS-level ad blocking)`
+  
+- `Firewall and routing configurations`
 
 ## 🦄 Features
 
-Here's what you can do with NinjaSketch:
+Here's what you can do with the network I built:
 
-- **Choose a Tool**: You have pencils, lines, rectangles, and text tools. Pick one and start creating.
+- **Wireless Coverage:** Seamless Wi-Fi throughout the house using multiple UniFi access points with optimized placement and channels.
 
-- **Draw and Move**: Click and drag on the canvas to draw. To move something, select it and drag it to a new spot. Also, resize elements by dragging the corners. Resizing only works on rectangles or lines.
+- **Device Segmentation:** Network is divided into VLANs to isolate IoT devices, guest networks, and sensitive personal devices, preventing lateral movement in case of compromise.
 
-- **Edit Text**: Click on the canvas and start typing to add text to your drawings. You can also edit existing text.
+- **Security Cameras:** Full IP camera coverage with remote monitoring capabilities. Motion alerts and recording configurations provide home security.
 
-- **Zoom**: Use Ctrl + Scroll or click on the buttons to zoom in for detail or out to see the whole picture.
+- **Door Access Control:** Centralized management of door controllers for keyless entry and access logging.
 
-- **Pan**: Hold the Space bar and drag or use the middle mouse button to move around the whiteboard canvas.
+- **VPN with Privacy:** A router-wide VPN protects traffic from external threats. Integrated DNS-level ad blocking reduces unwanted tracking and improves browsing privacy.
 
-### 🎯 Keyboard Shortcuts:
+- **Network Monitoring:** Centralized monitoring of devices, bandwidth usage, and network health through the UniFi Controller dashboard.
 
-Speed up your work with these shortcuts:
+## 🎯 Key Benefits:
 
-- **Canvas Navigation**: Press the Space bar and drag or use the middle mouse button.
-- **Undo**: Ctrl + Z.
-- **Redo**: Ctrl + Y or Ctrl + Shift + Z.
-- **Zoom In**: Ctrl + Plus.
-- **Zoom Out**: Ctrl + Minus.
+- **Privacy & Security:** Reduced attack surface by isolating devices and enforcing network policies.
+
+- **Manageability:** Easy monitoring and control from a single interface.
+
+- **Scalability:** Designed to expand with more devices or new VLANs if needed.
 
 ## 👩🏽‍🍳 The Process
 
-I started by rendering a canvas with rough.js to create the base for all the drawings. Then, I focused on drawing on the canvas, allowing users to make lines, rectangles, and other shapes.
+I started by planning the network layout and identifying the devices I needed, including access points, IP cameras, and door access controllers. I mapped out where each device would go to ensure coverage and functionality across the home.
 
-Next, I made sure users could move elements around. This was important for adjusting drawings. After that, I added the ability to resize elements to give more control over the shapes.
+Next, I deployed the hardware. I installed the access points for Wi-Fi coverage, mounted security cameras in strategic locations, and configured door controllers for secure entry and logging. Device placement was planned to balance performance, coverage, and convenience.
 
-To make sure mistakes could be fixed, I implemented undo and redo features. I also added freehand drawing for a more natural sketching experience and a text tool to label or note on the canvas.
+Once the devices were in place, I configured the network. I segmented it into VLANs to isolate guest devices, IoT devices, and sensitive personal devices, preventing lateral movement and protecting critical systems. I also set up a router-wide VPN with DNS-level ad blocking to improve privacy and reduce the attack surface for all connected devices.
 
-To navigate larger drawings, I put in pan and zoom tools. With everything functioning, I designed the whole UI to make it user-friendly and appealing.
+I tested network connectivity, Wi-Fi coverage, VPN access, and camera feeds, making adjustments to channels, firewall rules, and device settings to ensure everything ran smoothly.
 
-Finally, I added testing with Cypress and Testing Library. I conducted end-to-end tests on drawing and manipulating text, lines, rectangles, and freehand drawings to make sure everything worked smoothly.
+Along the way, I documented each step, from VLAN configurations to device settings, so the network could be replicated or troubleshot in the future. Documenting the process helped me understand the network more deeply and ensured nothing was missed.
 
-Along the way, while building everything, I took notes on what I've learned so I don't miss out on it. I also documented the behind-the-scenes processes every time a feature was added.
-
-This way, I understood what I've built. The funny thing is, as soon as I started to document what happened behind the scenes and the features I've added, it made me realize that we fully understand something once we've actually taken a step back, thought about it, and documented what we've done. I think this is a good practice to follow when learning something new.
+By the end, I had a fully functional, secure home network and a much better understanding of network design, device integration, and system management. Planning, implementing, testing, and documenting each step helped me see how everything works together.
 
 ## 📚 What I Learned
 
-During this project, I've picked up important skills and a better understanding of complex ideas, which improved my logical thinking.
+### 🧠 VLANs and Segmentation
 
-### 🧠 `useHistory` Hook:
+- **Logical Isolation:** Learned how to separate network traffic to protect sensitive devices.
 
-- **Logical Thinking**: Creating the `useHistory` hook taught me to think about how to manage saving, undoing, and redoing actions. I had to really understand how to track changes and plan out user actions.
+- **Lateral Movement Prevention:** Gained insight into how attackers move across networks and how segmentation mitigates this risk.
 
-### 📏 Coordinates and Measurements:
+### 🔒 Security & VPN
 
-- **Accuracy**: I've become better at working with shapes and points, like knowing if a point is inside a shape. This required careful measurements.
-- **Math Skills**: I used math functions to make sure everything was placed correctly and to calculate distances.
+- **Network Hardening:** Configuring router-level VPN and DNS-level ad blocking enhanced my understanding of privacy and threat mitigation.
 
-### 🎨 Discovering Rough.js:
+### 🎛 UniFi Ecosystem
 
-- **New Tools**: I found out about Rough.js, which lets me make graphics look hand-drawn. This was a new and exciting tool for me.
+- **Device Management:** Learned to manage multiple UniFi devices through a single controller interface.
 
-### 🔍 Deep Dive into Functions:
+- **Integration Skills:** Connected cameras, access points, and door controllers seamlessly on a unified network.
 
-- **Complex Functions**: I spent time understanding the `getSvgPathFromStroke` function, which turns drawing movements into smooth paths.
+### 📈 Overall Growth
 
-### ✏️ Managing Points and Drawing:
+- **Networking Knowledge:** This project strengthened my understanding of home network design, device security, and centralized management.
 
-- **Working with Points**: I learned how to collect and use points from drawings, which involved understanding and managing data to reflect what the user does.
+- **Problem-Solving:** Optimized Wi-Fi coverage, resolved connectivity issues, and fine-tuned firewall rules for maximum performance.
 
-### 🎣 React Hooks and Rendering:
+### 💭 How it can be improved
 
-- **New Knowledge**: I learned about `useLayoutEffect`, which helps make sure changes are done before the screen updates. This was useful for certain drawing functions.
+- Integrate additional smart home devices with VLAN isolation.
 
-### 🎡 Advanced Event Handling:
+- Set up automated alerts for unusual network activity.
 
-- **User Interaction**: I worked with the wheel event listener, which allowed me to add zooming and panning features. This made the app more interactive and user-friendly.
+- Expand VPN and ad-blocking rules for mobile devices outside the home.
 
-### 📈 Overall Growth:
+- Implement redundant internet connectivity for failover.
 
-Each part of this project helped me understand more about building apps, managing complex information, and improving user experience. It was more than just making a tool. It was about solving problems, learning new things, and improving my skills for future work.
+## 🚦 Running / Accessing the Network
 
-## 💭 How can it be improved?
+To manage or replicate the network setup:
 
-- Add more colors to the color picker.
-- Add more tools like a circle, eraser, and more.
-- Add more shapes like triangles, stars, and more.
-- Add more keyboard shortcuts to make things faster.
-- Add more themes like dark mode, light mode, and more.
-- Add more text options like font size, font color, and more.
-- Instead of have any in two places, create a type for the rough.js elements.
+1. Access the UniFi Controller via browser or mobile app.
 
-## 🚦 Running the Project
+2. Navigate to the Devices tab to view access points, cameras, and door controllers.
 
-To run the project in your local environment, follow these steps:
+3. Configure VLANs and firewall rules under Settings → Networks.
 
-1. Clone the repository to your local machine.
-2. Run `npm install` or `yarn` in the project directory to install the required dependencies.
-3. Run `npm run start` or `yarn start` to get the project started.
-4. Open [http://localhost:5173](http://localhost:5173) (or the address shown in your console) in your web browser to view the app.
+4. Enable VPN and DNS-level ad blocking under Settings → Internet / Security.
 
-## 🍿 Video
-
-https://github.com/mirayatech/NinjaSketch/assets/71933266/6a16c9e5-6380-4317-96e7-d132768f7b40
+5. Monitor device health and alerts in the Dashboard.
